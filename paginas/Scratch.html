@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Scratch</title>
+    <style>
+        header{
+            display: flex;
+            flex-direction: column; /* Cambia la dirección de los elementos a columna */
+            justify-content: center;
+            align-items: center;
+            background-color: #b5d5fc;
+            height: 100px;
+            color: white;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #b5d5fc;
+            height: 100px;
+            color: white;
+        }
+        /* Fondo de la página */
+        body {
+            background-color: #a8d8f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Estilo para el título */
+        h1 {
+            text-align: center;
+            color: #e5e8eb;
+            text-shadow:5px 5px 15px #060505;
+        }
+        
+        /* Estilo para el subtítulo */
+        h2 {
+            text-align: center;
+            color: #eef3f8;
+            text-shadow:5px 5px 15px #060505;
+        }
+        
+        /* Contenedor principal en flex */
+        .main-container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Contenido de texto principal */
+        .content {
+            flex: 2;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Contenedor para las imágenes en el lado derecho */
+        .sidebar {
+            flex: 1;
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        .sidebar img {
+            width: 100%;
+            max-width: 250px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .description {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        /* Sección de herramientas de programación */
+        .tools-section {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .tools-section img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .nav-item img {
+            width: 50px; /* Tamaño reducido para parecer icono */
+            height: 50px; /* Tamaño cuadrado */
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+        .nav-item {
+            text-align: center;
+            width: 80px;
+            margin: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Introducción a Scratch</h1>
+        <h2>Un entorno divertido para aprender a programar</h2>
+    </header>
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Contenido principal de texto -->
+        <div class="content">
+            <p> Scratch es un lenguaje de programación visual diseñado especialmente para facilitar el aprendizaje de la programación a niños y principiantes. Desarrollado por el MIT (Instituto de Tecnología de Massachusetts), Scratch permite a los usuarios crear proyectos interactivos como juegos, animaciones y simulaciones mediante una interfaz gráfica que utiliza bloques de código que se ensamblan como piezas de un rompecabezas. Esta metodología elimina la necesidad de escribir código en lenguajes complejos, lo que hace que la programación sea más accesible y comprensible para todos</p>
+            
+            <p>Fue desarrollado por el <strong>MIT Media Lab</strong> y está diseñado especialmente para jóvenes principiantes en programación. Scratch fomenta la creatividad, la lógica y el pensamiento crítico mientras permite a los usuarios compartir sus creaciones en una comunidad mundial.</p>
+	<center><p>Características Principales.</p></center>
+<p><h2>Interfaz Gráfica:</h2> Scratch utiliza una interfaz visual donde los usuarios pueden arrastrar y soltar bloques que representan diferentes comandos e instrucciones. Esto permite crear secuencias lógicas sin necesidad de conocimientos técnicos previos.</p>
+<p><h2>Bloques de Código:</h2> Los bloques están organizados en categorías como movimiento, apariencia, sonido, control y eventos. Cada bloque tiene una función específica que, al combinarse, permite programar el comportamiento de personajes y objetos en los proyectos.</p>
+<p><h2>Multilingüe:</h2> Scratch está disponible en más de 70 idiomas, lo que facilita su uso en diversas comunidades alrededor del mundo.</p>
+
+        </div>
+
+        <!-- Imágenes en el lado derecho -->
+        <div class="sidebar">
+            <img src="imagenes/scratch-logo.png" alt="Logo de Scratch">
+            <p class="description">El logo de Scratch representa al icónico gato, que es el personaje principal utilizado en muchas animaciones y juegos creados en esta plataforma.</p>
+            
+            <img src="imagenes/scratch-interface.png" alt="Interfaz de Scratch">
+            <p class="description">La interfaz de Scratch es simple e intuitiva, permitiendo a los usuarios arrastrar bloques de código para crear acciones y movimientos de los personajes.</p>
+            
+            <img src="imagenes/scratch-example.png" alt="Ejemplo de proyecto en Scratch">
+            <p class="description">Ejemplo de un proyecto en Scratch, donde se puede ver cómo se combinan bloques de código para hacer que un personaje interactúe en una animación.</p>
+        </div>
+    </div>
+
+    <!-- Nueva sección: Herramientas de programación en Scratch -->
+    <h2 style="text-align:center; margin-top: 40px;">Herramientas de Programación en Scratch</h2>
+    <div class="tools-section">
+        <!-- Bloque de Movimiento -->
+<p><h2> Bloque de Movimiento </h2></p>
+        <img src="imagenes/scratch-movimiento.png" alt="Bloque de Movimiento">
+        <p class="description"><strong>Bloque de Movimiento:</strong> Los bloques de movimiento en Scratch son fundamentales para controlar la acción de los sprites, que son las imágenes o personajes que se mueven en el escenario. Estos bloques, fácilmente identificables por su color azul, permiten a los programadores manipular la posición y orientación de los sprites mediante una variedad de comandos..</p>
+<p><h2> Bloque de Apariencia </h2></p>
+        <!-- Bloque de Apariencia -->
+        <img src="imagenes/scratch-apariencia.png" alt="Bloque de Apariencia">
+        <p class="description"><strong>Bloque de Apariencia:</strong> Los bloques de apariencia en Scratch son una categoría clave de bloques, identificables por su color morado, que permiten a los usuarios modificar la apariencia de los sprites y el fondo del escenario. Con un total de 20 bloques, se dividen en 17 bloques apilables y 3 bloques de reporte de valor.</p>
+<p><h2> Bloque de Sonido </h2></p>
+        <!-- Bloque de Sonido -->
+        <img src="imagenes/scratch-sonido.png" alt="Bloque de Sonido">
+        <p class="description"><strong>Bloque de Sonido:</strong> Los bloques de sonido en Scratch son una de las diez categorías de bloques, fácilmente identificables por su color rosa o magenta. Estos bloques son fundamentales para controlar y manipular los sonidos en un proyecto, permitiendo a los usuarios añadir efectos sonoros, música y diálogos a sus animaciones y juegos. En total, hay 9 bloques de sonido, que se dividen en 8 bloques apilables y 1 bloque informador.</p>
+<p><h2> Bloque de Control </h2></p>
+        <!-- Bloque de Control -->
+        <img src="imagenes/scratch-control.png" alt="Bloque de Control">
+        <p class="description"><strong>Bloque de Control:</strong> Los bloques de control en Scratch son una de las diez categorías principales de bloques, reconocibles por su color ámbar. Estos bloques son esenciales para gestionar el flujo de ejecución en los scripts, permitiendo a los programadores establecer condiciones, repeticiones y temporizaciones en sus proyectos.</p>
+<p><h2> Bloque de Sensores </h2></p>
+        <!-- Bloque de Sensores -->
+        <img src="imagenes/scratch-sensores.png" alt="Bloque de Sensores">
+        <p class="description"><strong>Bloque de Sensores:</strong> Los bloques de sensores en Scratch son una categoría esencial que permite a los sprites interactuar con su entorno y responder a diferentes estímulos. Estos bloques son fácilmente identificables por su color cian y se utilizan para detectar condiciones y eventos dentro del proyecto. </p>
+
+<p><h2>Aplicaciones en el Aula:</h2> Scratch es ampliamente utilizado en entornos educativos. Muchos docentes incorporan este lenguaje en sus planes de estudio para enseñar conceptos básicos de programación y lógica a estudiantes desde primaria hasta secundaria. Además, Scratch se ha integrado en asignaturas como matemáticas y tecnología, ayudando a los alumnos a visualizar conceptos complejos de manera interactiva.</p>
+
+    </div>
+
+    <footer>
+        <div class="nav-item">
+            <a href="../index.html"><img src="imagenes/universidad_icon.png" alt="Inicio"></a>
+        </div>
+        <div class="nav-item">
+            <a href="Scratch.html"><img src="imagenes/scratch.png" alt="Scratch"></a>
+        </div>
+        <div class="nav-item">
+            <a href="python.html"><img src="imagenes/pythonp.png" alt="Python"></a>
+        </div>
+        <div class="nav-item">
+            <a href="java.html"><img src="imagenes/java.png" alt="Java"></a>
+        </div>
+        <div class="nav-item">
+            <a href="html5.html"><img src="imagenes/html5.png" alt="HTML"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbe0dd; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.container {
+    text-align: center; /* Centrar texto dentro del contenedor */
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+h1 {
+    font-family: 'Times New Roman', serif; 
+    font-size: 2.5em; 
+    color: #04053f; 
+    text-align: center;
+}
+p {
+    font-size: 1.5em; /* Tamaño del párrafo */
+    color: #666; /* Color del texto del párrafo */
+}
+img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 20px; /* Espaciado superior para la imagen */
+}

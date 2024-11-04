@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal - Universidad Central del Ecuador</title>
+    <link rel="shortcut icon" href="paginas/imagenes/universidad_icon.png">
+    <style>
+        * {
+            font-family: Times, serif;
+            margin: 10px;
+        }
+
+        header, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #df6528;
+            height: 50px;
+            color: white;
+        }
+
+        #navegador {
+            background-color: rgba(236, 247, 175, 0.8);
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            text-align: center;
+            width: 80px;
+            margin: 5px;
+        }
+
+        .nav-item img {
+            width: 50px; /* Tamaño reducido para parecer icono */
+            height: 50px; /* Tamaño cuadrado */
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #0c0b0b;
+            font-size: 12px;
+            background-color: #faf7f7;
+            padding: 8px 0;
+            display: block;
+            border-radius: 5px;
+            margin-top: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-item a:hover {
+            background-color: #FFA500;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        aside {
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #df6528;
+            margin: 10px 0;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Universidad Central del Ecuador</h2>
+    </header>
+    <main>
+        <h1>Bienvenidos a la Introducción a los Lenguajes de Programación</h1>
+        <p>En esta página encontrarás recursos esenciales para explorar diferentes lenguajes de programación. Estos lenguajes son fundamentales en el desarrollo de software y son presentados de manera que puedas aprender y practicar de forma efectiva.</p>
+    </main>
+    <nav id="navegador">
+        <div class="nav-item">
+            <img src="paginas/imagenes/scratch.png" alt="Scratch">
+            <a href="paginas/Scratch.html">Scratch</a>
+        </div>
+        <div class="nav-item">
+            <img src="paginas/imagenes/pythonp.png" alt="Python">
+            <a href="paginas/python.html">Python</a>
+        </div>
+        <div class="nav-item">
+            <img src="paginas/imagenes/java.png" alt="Java">
+            <a href="paginas/java.html">Java</a>
+        </div>
+        <div class="nav-item">
+            <img src="paginas/imagenes/html5.png" alt="HTML">
+            <a href="paginas/html5.html">HTML</a>
+        </div>
+    </nav>
+    <aside>
+        <h3>Descripción de los Lenguajes:</h3>
+        <ul>
+            <li><strong>Scratch:</strong> Un lenguaje visual diseñado para enseñar la lógica de la programación a niños y principiantes.</li>
+            <hr>
+            <li><strong>Python:</strong> Un lenguaje versátil y fácil de aprender, popular en ciencia de datos, desarrollo web, y más.</li>
+            <hr>
+            <li><strong>Java:</strong> Un lenguaje robusto y ampliamente usado para aplicaciones empresariales y móviles.</li>
+            <hr>
+            <li><strong>HTML:</strong> El lenguaje base para estructurar contenido en la web, esencial para desarrolladores web.</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Integrantes: Andrea Angüisaca, Grace Farinango, Joselyn Morales, Alejandro Nuñez, Ian Viteri</p>
+    </footer>
+</body>
+</html>

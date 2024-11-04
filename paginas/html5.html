@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="imgagenes/html5.png">
+    <style>
+      *{/*Los parámetros aplicados aquí afectarán a toda la página*/
+        font-family: Times; /*Fuente de todo el documento*/
+        margin: 10px;  /*establece los márgenes de un elemento especificando entre 1 y 4 valores*/
+      }
+
+      header, footer { /*al incluir más de una etiqueta en un grupo, estos parámetros serán aplicados en ambas etiquetas*/
+        display: flex;/*establece los tipos de visualización interna y externa de un elemento*/
+        justify-content: center; /*justifica el contenido de la etiqueta*/
+        background-color: #df6528;
+        height: 100px;
+        align-items: center;
+      }
+      section {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #df6528;
+      }
+      main {
+        padding: 5px;
+      }
+
+      h1 {
+        color: #fcf8f5;
+      }
+
+      h2 {
+        color: #df6528;
+      }
+
+      h3{
+        color: #df6528;
+        font-style:italic;
+      }
+
+      p{
+        color: black;
+        line-height: 2;
+      }
+
+      #foto {
+        border-radius: 10px; /*crea un radio en los parámetros especificados*/
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /*crea una sombrea interna en la imagen*/
+        width: 200px;
+        height: 200px;
+      }
+
+      #navegador{
+        background-color: rgb(252, 251, 247);
+        border-bottom: 2px solid #df6528;
+      }
+
+      #name:hover { /*el parámetro hover modifica la reacción de la página al contacto con el mouse*/
+        font-weight: bold; /*decide el grosor de cualquier línea o de cualquier fuente*/
+        color: rgb(243, 235, 230);
+      }
+
+      ol {
+        margin: 20px 0 0 -20px;
+        color: rgb(94, 84, 84);
+        font-size: 16px; /*tamaño de la fuente utilizada*/
+      }
+
+      a {
+        text-decoration: none; /*decide si al enlace se lo coloca con azul y subrayado*/
+        color: black;
+      }
+
+      a:hover {
+        font-weight: bold;
+        color: black;
+      }
+
+      a:active { /*active indica que si el enlace junto al que está, es presionado, se cumplirán ciertos parámetros en la misma*/
+         color: blue;
+      }
+
+      li {
+        margin-top: 12px;
+      }
+      .nav-item img {
+        width: 50px; /* Tamaño reducido para parecer icono */
+        height: 50px; /* Tamaño cuadrado */
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .nav-item {
+        text-align: center;
+        width: 80px;
+        margin: 5px;
+    }
+    </style>
+
+    <title>HTML5</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="name">Sección HTML5</h1>
+    </header>
+    <main>
+      <h2>Bienvenido a una guía básica de HTML5</h2>
+    </main>
+    <nav id="navegador">
+        <center><img id="foto" src="imagenes/html5.png" class="foto" /></center>
+        <aside><font color="orange" size="4">Índice</font></aside>
+        <ul>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#hipervinculos">Hipervínculos</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+      <section id="tablas">
+        <h2>Tablas en HTML5</h2>
+        <p>
+            Las tablas son muy útiles para organizar datos en un formato estructurado, con filas y columnas. Se crean utilizando la etiqueta &lt;table&gt;, con filas definidas por &lt;tr&gt; y celdas &lt;td&gt;.
+            <br>Si por otro lado queremos estructurar la tabla con encabezado: La manera correcta luego del código "table" es colocar el código para encabezado: &lt;thead&gt; y, en caso de las columnas el código es &lt;th&gt;; para el cuerpo de la tabla luego de cerrar "thead" el código es &lt;tbody&gt; 
+        </p>
+        <center><img id="foto" src="imagenes/tablehead.png"></center>
+        <h3>Estructura de una Tabla</h3>
+        <table border="3" width="25%">
+            <thead>
+                <tr>
+                    <th>Estudiante</th><th>Carrera</th><th>Semestre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grace Farinango</td><td>Informática</td><td>Cuarto</td>
+                </tr>
+                <tr>
+                    <td>Andrea Anguisaca</td><td>Literatura</td><td>Cuarto</td>
+                </tr>
+                <tr>
+                    <td>Ian Viteri</td><td>Sociales</td><td>Cuarto</td>
+                </tr>
+                <tr>
+                    <td>Alejandro Nuñez</td><td>Matemática</td><td>Cuarto</td>
+                </tr>
+                <tr>
+                    <td>Joselin Morales</td><td>Educación Inicial</td><td>Cuarto</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+      <section id="imagenes">
+        <h2>Imágenes en HTML5</h2>
+        <p>
+          Las imágenes son un elemento fundamental en las páginas web, ya que ayudan a transmitir información visual y mejoran la experiencia del usuario. En HTML5, las imágenes se incorporan utilizando la etiqueta &lt;img&gt;.
+        </p>
+        <p>Aquí te mostramos cómo usar la etiqueta &lt;img&gt; correctamente:</p>
+      
+        <h3>Sintaxis de la etiqueta &lt;img&gt;</h3>
+        <p>
+          La etiqueta &lt;img&gt; es una etiqueta vacía, lo que significa que no tiene una etiqueta de cierre. Sus atributos principales son:
+        </p>
+        <ul>
+          <li>src: Especifica la ruta de la imagen. Puede ser una URL absoluta o relativa.</li>
+          <li>alt: Proporciona un texto alternativo que se muestra si la imagen no se puede cargar. Este atributo es importante para la accesibilidad y para los motores de búsqueda.</li>
+          <li>width y height: Definen el ancho y alto de la imagen (en píxeles).</li>
+        </ul>
+      
+        <h3>Ejemplos</h3>
+        <p>Aquí hay algunos ejemplos de cómo usar imágenes en HTML:</p>
+        
+        <h4>1. Imagen básica</h4>
+        &lt;img src="ruta/de/imagen.jpg" alt="Descripción de la imagen"&gt;
+        
+        <h4>2. Imagen con tamaño específico</h4>
+        &lt;img src="ruta/de/imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt;
+      
+        <h3>Consejos para usar imágenes de manera eficiente</h3>
+        <ul>
+          <li>**Optimiza tus imágenes**: Usa formatos de imagen adecuados (JPEG para fotos, PNG para gráficos transparentes, y SVG para imágenes vectoriales) y comprime las imágenes para mejorar el rendimiento de la página.</li>
+          <li>**Usa el atributo alt**: Siempre proporciona un texto alternativo que describa la imagen. Esto es crucial para usuarios con discapacidades visuales y para situaciones en las que la imagen no se carga.</li>
+          <li>**Aprovecha las imágenes responsivas**: Utiliza técnicas como el atributo srcset y sizes para que las imágenes se adapten a diferentes resoluciones de pantalla.</li>
+        </ul>
+      
+        <h3>Imágenes responsivas</h3>
+        <p>Con HTML5, puedes usar el atributo srcset para definir varias versiones de la misma imagen, asegurando que los usuarios obtengan la versión más adecuada según el tamaño de su dispositivo:</p>
+        &lt;img src="imagen-pequena.jpg" srcset="imagen-mediana.jpg 768w, imagen-grande.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Imagen responsiva"&gt;
+        <center><img id="foto" src="imagenes/img.png" srcset="imagenes/img.png 768w, imagenes/img.png 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Imagen responsiva"></center>
+      </section>
+      <section id="hipervinculos">
+        <h2>Hipervínculos en HTML5</h2>
+        <p>
+          Los hipervínculos son elementos clave en la navegación web, ya que permiten a los usuarios moverse de una página a otra o a diferentes secciones dentro de la misma página. En HTML5, los hipervínculos se crean con la etiqueta &lt;a&gt;.
+        </p>
+      
+        <h3>Sintaxis de la etiqueta&lt;a&gt;</h3>
+        <p>
+          La etiqueta &lt;a&gt; requiere al menos el atributo href, que especifica la URL o la ubicación a la que se quiere enlazar. El texto o contenido dentro de la etiqueta &lt;a&gt; se convierte en un enlace clicable.
+        </p>
+      
+        <h3>Ejemplos de uso</h3>
+      
+        <h4>1. Hipervínculo básico</h4>
+        &lt;a href="https://www.ejemplo.com"&gt;Visitar Ejemplo&lt;/a&gt;
+        <p>Este enlace lleva al usuario al sitio web "https://www.ejemplo.com".</p>
+      
+        <h4>2. Enlace a una sección en la misma página</h4>
+        <p>Para enlazar a una sección específica de la misma página, se utiliza un identificador (ID) del elemento:</p>
+        &lt;a href="#imagenes"&gt;Ir a la sección de Imágenes&lt;/a&gt;
+        <p>El enlace llevará al usuario a la sección con el atributo id="imagenes".</p>
+      
+        <h4>3. Enlace a un archivo o descarga</h4>
+        &lt;a href="documento.pdf" download&gt;Descargar Documento&lt;/a&gt;
+        <p>El atributo download hace que el archivo se descargue automáticamente en lugar de abrirse en el navegador.</p>
+        <i><a href="imagenes/programacion.zip" download>"Descargar Proyecto"</a></i>
+      
+        <h3>Atributos importantes de los hipervínculos</h3>
+        <ul>
+          <li>href: Define la URL a la que apunta el enlace. Puede ser una URL absoluta (un enlace externo) o relativa (un enlace interno).</li>
+          <li>target: Especifica dónde se abrirá el enlace. Los valores comunes son:
+            <ul>
+              <li>_self :Abre el enlace en la misma pestaña (comportamiento por defecto).</li>
+              <li>_blank : Abre el enlace en una nueva pestaña o ventana.</li>
+            </ul>
+          </li>
+          <li>rel: Describe la relación entre el documento actual y el enlace. Es útil para la seguridad cuando se usa target="_blank" (por ejemplo, rel="noopener noreferrer").</li>
+          <li>title: Proporciona información adicional sobre el enlace que se muestra como un tooltip cuando el usuario pasa el ratón por encima.</li>
+        </ul>
+      </section>
+    </aside>
+    <br>
+    <footer>
+      <div class="nav-item">
+        <a href="../index.html"><img src="imagenes/universidad_icon.png" alt="Inicio"></a>
+      </div>
+      <div class="nav-item">
+          <a href="Scratch.html"><img src="imagenes/scratch.png" alt="Scratch"></a>
+      </div>
+      <div class="nav-item">
+          <a href="python.html"><img src="imagenes/pythonp.png" alt="Python"></a>
+      </div>
+      <div class="nav-item">
+          <a href="java.html"><img src="imagenes/java.png" alt="Java"></a>
+      </div>
+      <div class="nav-item">
+          <a href="html5.html"><img src="imagenes/html5.png" alt="HTML"></a>
+      </div>
+    </footer>
+  </body>
+</html>
